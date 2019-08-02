@@ -1,0 +1,23 @@
+name: device_proxy
+description: A plugin helps to get device's proxy setting
+version: 0.0.1
+authors:
+  - King Wu <king.wuff101@gmail.com>
+homepage: https://github.com/KingWu/device_proxy
+maintainer: King Wu (@kw101)
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    androidPackage: com.intechlab.device_proxy
+    pluginClass: DeviceProxyPlugin

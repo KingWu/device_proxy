@@ -1,0 +1,22 @@
+PODS:
+  - device_proxy (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - device_proxy (from `.symlinks/plugins/device_proxy/ios`)
+  - Flutter (from `.symlinks/flutter/ios`)
+
+EXTERNAL SOURCES:
+  device_proxy:
+    :path: ".symlinks/plugins/device_proxy/ios"
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+
+SPEC CHECKSUMS:
+  device_proxy: cd467c4ca97cc8fbc23d9252043bdc4fc2ecc02f
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+
+PODFILE CHECKSUM: b6a0a141693093b304368d08511b46cf3d1d0ac5
+
+COCOAPODS: 1.6.1
