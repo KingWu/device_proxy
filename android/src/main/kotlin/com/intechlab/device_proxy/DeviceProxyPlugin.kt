@@ -47,7 +47,7 @@ class DeviceProxyPlugin(val activity: Activity?) : MethodCallHandler {
         val address = System.getProperty("http.proxyHost")
         val port = System.getProperty("http.proxyPort")
 
-        if(address.isNotEmpty() && port.isNotEmpty()){
+        if(!address.isNullOrEmpty() && !port.isNullOrEmpty()){
           return "$address:$port"
         }
       }
