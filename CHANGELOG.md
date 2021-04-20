@@ -1,3 +1,7 @@
+## 0.0.4
+
+- Add null check to getProxySetting DeviceProxyPlugin.kt
+
 ## 0.0.3
 
 - Fix crash on Android 4.3
