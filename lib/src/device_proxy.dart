@@ -8,7 +8,7 @@ class DeviceProxy {
       const MethodChannel('com.intechlab/device_proxy');
 
   static Future<ProxyConfig> get proxyConfig async {
-    final String proxyData = await _channel.invokeMethod('getProxySetting');
+    final String proxyData = await (_channel.invokeMethod('getProxySetting') as FutureOr<String>);
     return ProxyConfig(proxyData);
   }
 }

@@ -7,7 +7,7 @@ homepage: https://github.com/KingWu/device_proxy
 maintainer: King Wu (@kw101)
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
