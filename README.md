@@ -14,5 +14,5 @@ print(proxyConfig.proxyUrl); // eg. 127.0.0.1:8888
 ```
 
 # Powered By 
-- [Plaker Lab 創玩坊](https://plakerlab.com/)
+- [Plaker Lab 創玩坊](https://www.plakerlab.com/)
 - [Wenjetso 搵著數](https://www.wenjetso.com/zh_HK/)
