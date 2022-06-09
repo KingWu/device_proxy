@@ -14,6 +14,7 @@ import androidx.annotation.NonNull
 
 class DeviceProxyPlugin : FlutterPlugin, MethodChannel.MethodCallHandler, ActivityAware {
 
+    private lateinit var channel : MethodChannel
     private var activity: Activity? = null
 
     override fun onMethodCall(call: MethodCall, result: Result) {
@@ -28,7 +29,7 @@ class DeviceProxyPlugin : FlutterPlugin, MethodChannel.MethodCallHandler, Activi
     }
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-        val channel = MethodChannel(flutterPluginBinding.binaryMessenger, "com.intechlab/device_proxy")
+        channel = MethodChannel(flutterPluginBinding.binaryMessenger, "com.intechlab/device_proxy")
 
         channel.setMethodCallHandler(DeviceProxyPlugin())
     }
