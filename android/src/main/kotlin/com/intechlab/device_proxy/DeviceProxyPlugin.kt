@@ -16,18 +16,6 @@ class DeviceProxyPlugin : FlutterPlugin, MethodChannel.MethodCallHandler, Activi
 
     private var activity: Activity? = null
 
-    companion object {
-        @JvmStatic
-        fun registerWith(registrar: Registrar) {
-            val plugin = DeviceProxyPlugin()
-            val channel = MethodChannel(registrar.messenger(), "com.intechlab/device_proxy")
-            channel.setMethodCallHandler(plugin)
-            if (registrar.activeContext() is Activity) {
-                plugin.initActivity(registrar.activity())
-            }
-        }
-    }
-
     override fun onMethodCall(call: MethodCall, result: Result) {
         when (call.method) {
             "getProxySetting" -> {
@@ -46,7 +34,7 @@ class DeviceProxyPlugin : FlutterPlugin, MethodChannel.MethodCallHandler, Activi
     }
 
     override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
-
+        channel.setMethodCallHandler(null)
     }
 
     override fun onDetachedFromActivity() {
