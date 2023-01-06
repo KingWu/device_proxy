@@ -1,8 +1,8 @@
 class ProxyConfig {
-  bool isEnable;
-  String host;
-  String port;
-  String proxyUrl;
+  late bool isEnable;
+  String? host;
+  String? port;
+  String? proxyUrl;
 
   ProxyConfig(String proxyUrl) {
     _init(proxyUrl);
